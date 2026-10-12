@@ -23,9 +23,10 @@
   is uploaded, so neither Google nor anyone else can read it.</p>
   <ul>
     <li>The app requests only the <code>drive.file</code> permission: it can see and manage only
-    the files and folders it created itself, never anything else in your Drive.</li>
-    <li>It uses this access only to create its backup folder, upload backups, and delete its own
-    older backups (keeping the newest ten).</li>
+    the files and folders it created itself, plus a folder you explicitly choose for it in
+    Google's own folder picker. It never sees anything else in your Drive.</li>
+    <li>It uses this access only to create or use its backup folder, upload backups, and delete its
+    own older backups (keeping the newest ten).</li>
     <li>The access token is stored in your operating system's password store on your computer and
     is never sent anywhere other than Google.</li>
     <li>You can disconnect at any time in the app's settings, or revoke access at
